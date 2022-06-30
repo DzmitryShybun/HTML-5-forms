@@ -186,7 +186,40 @@
             </p>
         </form>
     </div>
-
+    <h2>Элементы для ввода цвета, url, email, телефона</h2>
+    <div title="color">
+        <label for="favcolor">Выберите цвет</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </div>
+    <div title="color&datalist">
+        <label for="favcolor2">Выберете цвет</label>
+        <input type="color" list="colors" id="favcolor2" name="favcolor2">
+        <datalist id="favcolor2">
+            <option value="#0000FF">blue</option>
+            <option value="#008000">green</option>
+            <option value="#ff0000">red</option>
+        </datalist>
+    </div>
+    <div title="Форма ввода в HTML5">
+        <h4>Форма ввода в HTML5</h4>
+        <form action="">
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="user@gmail.com" id="email" name="email">
+            </p>
+            <p>
+                <label for="url">URL: </label>
+                <input type="url" id="url" name="url">
+            </p>
+            <p>
+                <label for="phone">Телефон: </label>
+                <input type="tel" placeholder="(xxx)-xxx-xxxx" id="phone" name="phone">
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+    </div>
 
 
     </body>
