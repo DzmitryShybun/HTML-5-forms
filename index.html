@@ -331,7 +331,52 @@
 
         </form>
     </div>
-    </body>
+    <h2>Валидация форм</h2>
+    <div title="атрибут required">
+        <form method="get">
+        <p>
+            <label for="login3">Логин:</label>
+            <input type="text" required id="login3" name="login3">
+        </p>
+        <p>
+            <label for="password3">Пароль:</label>
+            <input type="password" required id="password3" name="passwordd3">
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+        </form>
+        <form method="get" title="Атрибуты max и min">
+            <p>
+                <label for="age2">Возраст:</label>
+                <input type="number" min="1" max="100" value="18" id="age2" name="age">
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </form>
+        <form method="get" title="Атрибут pattern">
+            <p>
+                <label for="phone5">Телефон:</label>
+                <input type="text" placeholder="+1-234-567-8901"
+                       pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone5" name="phone5">
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </form>
+        <form method="get" title="Отключение валидации" novalidate>
+            <p>
+                <label for="phone5">Телефон:</label>
+                <input type="text" placeholder="+1-234-567-8901"
+                       pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone5" name="phone5">
+            </p>
+            <p>
+                <input type="submit" value="Отправить" formnovalidate>
+            </p>
+        </form>
+
+    </div>
 
 
 
