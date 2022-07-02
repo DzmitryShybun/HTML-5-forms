@@ -246,7 +246,8 @@
     </div>
     <h2>Отправка файлов</h2>
     <div title="type=file">
-        <form enctype="multipart/form-data" method="post" action="http://localhost:8080/postfile.php"></form>
+        <form enctype="multipart/form-data" method="post"
+              action="http://localhost:8080/postfile.php"></form>
         <p>
             <input type="file" name="file" multiple>
         </p>
@@ -254,6 +255,58 @@
             <input type="submit" value="Отправить">
         </p>
     </div>
+    <h2>Список select</h2>
+    <div title="select">
+        <form method="get">
+        <p>
+            <label for="phone2">Выберете модель</label>
+            <select name="phone" id="phone2">
+                <option value="iphone 6s" disabled>iPhone 6s</option>
+                <option value="lumia 950">Lumia 950</option>
+                <option value="nexus 5x">Nexus 5X</option>
+                <option value="galaxy s7" selected>Galaxy S7</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+        </form>
+        <form method="get" title="tag multiple">
+            <p>
+                <label for="phone3">Выберите модель:</label><br>
+                <select multiple name="phone3" id="phone3">
+                    <option value="iphone 6s">iPhone 6S</option>
+                    <option value="lumia 950">Lumia 950</option>
+                    <option value="nexus 5x">Nexus 5X</option>
+                    <option value="galaxy s7">Galaxy S7</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </form>
+        <form method="get" title="optgroup">
+            <p>
+                <label for="phone4">Выберете модель:</label>
+                <select name="phone4" id="phone4">
+                    <optgroup label="Apple">
+                        <option value="iphone 6s">iPhone 6S</option>
+                        <option value="iphone 6s plus">iPhone 6S Plus</option>
+                        <option value="iphone 5se">iPhone 5SE</option>
+                    </optgroup>
+                    <optgroup label="Microsoft">
+                        <option value="lumia 950">Lumia 950</option>
+                        <option value="lumia 950 xl">Lumia 950 XL</option>
+                        <option value="lumia 650">Lumia 650</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </form>
+    </div>
+
     </body>
 
 
